@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web site</title>
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <style>
+        @import url(../2.jpg);
+
+       body{
+        background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../2.jpg);
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
+       }
+       #a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+#a:hover{
+    background-color: white;
+    color: black;
+}
+ #Video{
+     padding-top: 50px;
+ } 
+ #Div{
+     padding-left: 100px;
+     padding-top: 50px;
+ }  
+ 
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"  onclick="bio()">Bio
+            <span class="sr-only"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="Gallery()">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="News()">News</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+  
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Books</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#" onclick="The()">The Invincible Assassin</a>
+            <a class="dropdown-item" href="#" onclick="When()">When Eyes Don’t Meet Mind</a>
+            <a class="dropdown-item" href="#" onclick="An()">Anthology – Against The Storm </a>
+            <a class="dropdown-item" href="#" onclick="Ser()">Serendipity: An unexpected Bonding  </a>
+          </div>
+        </li>
+  
+      </ul>
+      <!-- Links -->
+  
+      
+    </div>
+    <!-- Collapsible content -->
+  
+  </nav>
+  <!--/.Navbar-->
+   
+    <header>
+   
+  
+<div  class="one-half" id="Div"  >
+   
+<h1 style="text-align: left; color: white; " >Media Downloads</h1>
+<p><a  target="_blank" rel="noopener"><img loading="lazy" class="alignleft wp-image-78" src="ss.jpg" alt="" width="117" height="173" /></a><a href="http://mybook.to/InvincibleAssassin" target="_blank" rel="noopener" id="a">The Invincible Assassin</a></p>
+
+
+<p><a  target="_blank" rel="noopener"><img loading="lazy" class="alignleft wp-image-78"  src="sss.jpg" width="117" height="173" /></a><a href="http://mybook.to/WhenEyesDontMeetMind" target="_blank" rel="noopener" id="a">When Eyes Don't Meet Mind </a></p>
+
+<p><a target="_blank" rel="noopener"><img loading="lazy" class="alignleft wp-image-78" src="ssss.jpg" width="117" height="173" /></a><a href="https://www.amazon.in/SERENDIPITY-Unexpected-VINOD-KUMAR-MADDALA-ebook/dp/B097XL2CGK/ref=sr_1_3?dchild=1&keywords=vinod+kumar+maddala&qid=1628653155&sr=8-3" target="_blank" rel="noopener" style="cursor: pointer;" id="a">Serendipity: An unexpected Bonding </a></p>
+</div>
+
+
+</header>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<script>
+function bio(){
+    document.getElementById("Div").innerHTML = `<div class="container"> <img   src="sa.jpeg" alt="" width="400" height="574" /> </div> <br><div style="color: white;">His first novel, “The Invincible Assassin”, a gripping suspense thriller has received multiple starred reviews, overwhelming applauses, and appreciations. 
+ 
+ Born and brought up in Hyderabad, Vinod Kumar Maddala has done Master of Science (M. Sc). He is a full-time software professional; a ping pong player representing at corporate level and has several wins in various tournaments to his name. 
+  
+ He is productively using his permitted time in pursuing his passion of being an ambitious author. He has several books lined up and he plans release them in the coming months.
+  
+ Before embarking on his writing career, he polished his writing skills by investing his free time in developing short stories, blogs, and movie reviews. He makes appealing short movies in action and thriller genres and amusing dance videos with his kids.
+  
+ A happy-go-lucky person and a philanthropist by nature, he feels blessed for being gifted with writing skills. 
+ He lives with his wife, Sridevi, sons–Chayank, Ruthvik and daughter, Nishista.</div>`
+}
+function The(){
+    document.getElementById("Div").innerHTML = `<div style="color: white;" class="container">He was an intelligent and notorious devil emerged directly from the depths of nightmares. Gifted with the ability to escape capture for decades, if not for a particular day, he would have never been recorded into the crime records. The dreadful challenge to the crime squad department was that his targets were exposed to the world before he began his hunt, a deadly and dangerous game. 
+Crime Department’s duty was to protect them from his clutches. To their misery, the death of a famed Godman shocks the nation.
+
+The horrors inside his mind spilled into the world and into the ordinary lives of those 5 random individuals, without any recognizable pattern or logic, until his motives were exposed by a crime squad officer by tracing and decrypting every piece of puzzle at microscopic close.
+
+He kills, not for passion, fun or revenge, but for a definite mysterious goal. After each assassination, a dark secret surface creating shockwaves from the clues of his letters. He justifies his assassinations by claiming they are destined to happen, with links to many incidents, starting from the very inception of the world, Vedic writings, Ramayana and Mahabharata, to the present-day Yuga.
+
+Were these deaths linked to Godman? Was he a serial Killer or Psychopath or Avatar? Was the crime force successful in hunting that Invincible Assassin finally?
+ </div>`
+}
+function When(){
+    document.getElementById("Div").innerHTML =`<div style="color: white;" class="container">In a major car crash, Detective Nicholas Thomas loses his wife, Sophie. He is left crippled, confined to a wheelchair, with his memory erased. Once a smart detective, he is now helpless and eccentric.
+
+When browsing through his dead wife's private room, he stumbles upon an intriguing painting which makes him realize that Sophie had been having a secret affair with an unknown person.
+Challenged by the mystery, he swears to rebuild his memories with the help of a loyal friend.
+
+Nicholas begins his hunt for Sophie's mysterious lover. The only challenge is, with his mind wiped clean, he has no idea where to start.
+
+As he digs deeper into the mystery, it seems that the mysterious adversary is doing everything to stall and block his findings. The more he goes into the mystery, the farther the adversary seems to be.
+
+Nicholas' memory may be gone, but will his steely determination see him through?
+
+Read this book to find out.</div>
+ `
+}
+function An(){
+    document.getElementById("Div").innerHTML = `<div style="color: white;" class="container">A conflict between wife and husband, a discussion between male colleagues on whose role is significant? Homemaker or working husband?
+An unexpected encounter of a disappointed homemaker with a stranger in the train journey...
+Will these incidents converge to an understanding and how resilience relates to these stories?</div>
+`
+}
+function Ser(){
+    document.getElementById("Div").innerHTML = `<div style="color: white;" class="container">"Hello, Amy…"
+"Wrong number…" Her voice was familiar. She disconnected the call. Later, the number was out of the service, and then her email was bounced.
+Is her friendship through the internet was for fun or mischief or just a hoax?
+The eternal bonding between a grownup boy and little girl was disconnected for unknown reasons.
+Will he find the reason behind her unexpected action, or will he hate her and lead his life with his girlfriend, or will nature give him any hints?
+The author's belief, 'Everything happens for a reason,' resonates in this story.
+The story is created based on true-to-life incidents and always stays close to the author's heart.</div>
+`
+}
+function News(){
+    document.getElementById("Div").innerHTML= `<div class="container" id="Video">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/uwunQarAWEI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>`
+}
+function Gallery(){
+    document.getElementById("Div").innerHTML= `<img loading="lazy" class="alignleft wp-image-78" src="ss.jpg"  width="217" height="273" id="img" /><br><hr/>
+    <img loading="lazy" class="alignleft wp-image-78"  src="sss.jpg" width="217" height="273" /><br><hr/>
+    <img loading="lazy" class="alignleft wp-image-78" src="ssss.jpg" width="217" height="273" /><br><hr/>
+    <img loading="lazy" class="alignleft wp-image-78" src="1.jpeg" width="217" height="273" /><br><hr/>
+    `
+}
+</script>
+</body>
+</html>
